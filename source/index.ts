@@ -1,7 +1,7 @@
-import { base32hex } from "rfc4648";
+import { encoding } from "bcrypto";
 
 export const encode = (content: string): string =>
-  base32hex.stringify(Buffer.from(content));
+  encoding.base32.encodeHex(Buffer.from(content));
 
 export const decode = (content: string): Buffer =>
-  Buffer.from(base32hex.parse(content));
+  encoding.base32.decodeHex(content);

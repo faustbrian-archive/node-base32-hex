@@ -33,7 +33,7 @@
     "prepublishOnly": "pnpm run build"
   },
   "dependencies": {
-    "rfc4648": "^1.5.0"
+    "bcrypto": "^5.4.0"
   },
   "devDependencies": {
     "@faustbrian/stdlint": "^1.0.0",
